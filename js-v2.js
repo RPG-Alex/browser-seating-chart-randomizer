@@ -56,24 +56,18 @@ var classes = {
 function rearrange(studentList) {
   for (let index = studentList.length - 1; index > 0; index--) {
     const randomPosition = Math.floor(Math.random() * (index + 1));
-
-      const temporary = studentList[index];
-      studentList[index] = studentList[randomPosition];
-      studentList[randomPosition] = temporary;
+    const temporary = studentList[index];
+    studentList[index] = studentList[randomPosition];
+    studentList[randomPosition] = temporary;
   }
 }
 
 
-function assignSeats(studentList){
-    for (let i = studentList.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    const temp = studentList[i];
-    studentList[i] = studentList[j];
-    studentList[j] = temp;
-}
-
+function assignSeats(studentList,times_shuffule){
+    for(let n = 0; n<times_shuffule;++n){
+        rearrange(studentList);
+    }
     for (let i = 0; i < studentList.length; i++) {
         allSeats[i].innerHTML = studentList[i];
-        
     }
 }
