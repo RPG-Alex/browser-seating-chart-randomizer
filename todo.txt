@@ -12,6 +12,7 @@
 ## Wanted
 - Styling
 - Equally Distributing Function  when there are not enough students)
+- Be able to reroll the same class in a row if needed
 
 ## Moon Shots
 - Changing seats(students) by dragging 
