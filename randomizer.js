@@ -2,8 +2,10 @@
 var dropdown = document.getElementById("dropdown");
 // get the seats for the room
 var allSeats = document.getElementsByClassName("seat");
-//add event for when class is chosen from dropdown
-dropdown.addEventListener('change', (event) => {
+// get the randomise button
+var randomise = document.getElementById("randomise");
+//add event for when the randomise button is clicked 
+randomise.addEventListener('click', (event) => {
     students=[
         '[empty]',
         '[empty]',
@@ -28,7 +30,7 @@ dropdown.addEventListener('change', (event) => {
 
     ];
     assignSeats(students);
-    students = classes[event.target.value]
+    students = classes[dropdown.value]
     assignSeats(students);
 })
 
