@@ -8,12 +8,22 @@
 
 ## Necessary
 - Randomize the seats
+- Students should never sit alone
+- Fill up the seats from the front
 
 ## Wanted
 - Styling
 - Equally Distributing Function  when there are not enough students)
 - Be able to reroll the same class in a row if needed
+- Add button to randomize & clear 
+- Open seating
+- Import the student name from blank list (save files later)
+- Digital Clock ( Date, Hour, Minute )
+- Label the teacher's desk. 
+- Label table with numbers
+- Able to save the seating chart (temporary)
 
 ## Moon Shots
-- Changing seats(students) by dragging 
+- Changing seats(students) & Tables by dragging 
 - Add and delete the students in the web browser
+- Relationship between the system (e.g. some students should not sit together)
