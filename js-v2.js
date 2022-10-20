@@ -52,20 +52,14 @@ var classes = {
         ]
 };
 
-//Rearranging Student List
-function rearrange(studentList) {
-  for (let index = studentList.length - 1; index > 0; index--) {
+
+
+function assignSeats(studentList){
+    for (let index = studentList.length - 1; index > 0; index--) {
     const randomPosition = Math.floor(Math.random() * (index + 1));
     const temporary = studentList[index];
     studentList[index] = studentList[randomPosition];
     studentList[randomPosition] = temporary;
-  }
-}
-
-
-function assignSeats(studentList,times_shuffule){
-    for(let n = 0; n<times_shuffule;++n){
-        rearrange(studentList);
     }
     for (let i = 0; i < studentList.length; i++) {
         allSeats[i].innerHTML = studentList[i];
