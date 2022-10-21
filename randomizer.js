@@ -4,6 +4,8 @@ var dropdown = document.getElementById("dropdown");
 var allSeats = document.getElementsByClassName("seat");
 // get the randomise button
 var randomise = document.getElementById("randomise");
+// get the clear button
+var clear = document.getElementById("clear");
 //add event for when the randomise button is clicked 
 randomise.addEventListener('click', (event) => {
     students=[
@@ -33,6 +35,34 @@ randomise.addEventListener('click', (event) => {
     students = classes[dropdown.value]
     assignSeats(students);
 })
+
+// add event for when the clear button is clicked which makes all the seats empty again
+clear.addEventListener('click',  (event) => {
+    students = [
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]',
+        '[empty]'
+    ];
+
+    assignSeats(students);
+    })
 
 //Student data
 var classes = {
